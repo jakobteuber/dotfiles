@@ -1,0 +1,68 @@
+# ~/.XCompose
+# This file defines custom Compose sequences for Unicode characters
+
+<Multi_key> <v> <slash> : "√" U2192 # Compose - >
+
+<Multi_key> <lesser> <lesser> : "⟨" U2192 # Compose - > 
+<Multi_key> <greater> <greater> : "⟩" U2192 # Compose - >
+
+<Multi_key> <greater> <lesser> : "⪤" U2192 # Compose - >
+<Multi_key> <lesser> <greater> : "⪤" U2192 # Compose - >
+
+
+# UTF-8 (Unicode) compose sequence
+#...
+<Multi_key> <p> <exclam>          : "¶"   # PILCROW SIGN
+<Multi_key> <P> <exclam>          : "¶"   # PILCROW SIGN
+<Multi_key> <v> </>          : "⎷"   # U+23B7 RADICAL SYMBOL BOTTOM
+
+<Multi_key> <minus> <d>           : "đ"   # LATIN SMALL LETTER D WITH STROKE
+<Multi_key> <minus> <b>           : "ƀ"   # LATIN SMALL LETTER B WITH STROKE
+<Multi_key> <minus> <g>           : "ǥ"   # LATIN SMALL LETTER G WITH STROKE
+
+<Multi_key> <acute> <period>           : "́" # U+0301 COMBINING ACUTE ACCENT
+<Multi_key> <dead_acute> <period>           : "́"   # U+0301 COMBINING ACUTE ACCENT
+<Multi_key> <dead_circumflex> <period>           : ""   # 'COMBINING CIRCUMFLEX ACCENT' (U+0302)
+<Multi_key> <minus> <period>           : "̄" # U+0304 COMBINING MACRON
+<Multi_key> <u> <period>           : "̆"   # U+0306 COMBINING BREVE
+<Multi_key> <colon> <period>           : "̈" # U+0308 COMBINING DIAERESIS
+<Multi_key> <comma> <period>           : "̨" # U+0328 COMBINING OGONEK
+<Multi_key> <period> <period>           : "̣" # Combining Dot Below
+<Multi_key> <tilde> <period>           : "̃" # U+0303 COMBINING TILDE
+<Multi_key> <parenleft> <period>           : "͡"   # U+2040 CHARACTER TIE
+
+<Multi_key> <t> <h>           : "θ"   # U+03B8 GREEK SMALL LETTER THETA
+<Multi_key> <p> <h>           : "φ"   # U+03C6 GREEK SMALL LETTER PHI
+<Multi_key> <c> <h>           : "χ"   # U+03C7 GREEK SMALL LETTER CHI
+<Multi_key> <T> <H>           : "Θ"   # U+0398 GREEK CAPITAL LETTER THETA
+<Multi_key> <P> <H>           : "Φ"   # U+03A6 GREEK CAPITAL LETTER PHI
+<Multi_key> <C> <H>           : "Χ"   # U+03A7 GREEK CAPITAL LETTER CHI
+
+<Multi_key> <g> <h>           : "ȝ"   # U+021D LATIN SMALL LETTER YOGH
+<Multi_key> <G> <H>           : "Ȝ"   # U+021C LATIN CAPITAL LETTER YOGH
+
+<Multi_key> <s> <h>           : "ʃ"   # U+0283 LATIN SMALL LETTER ESH
+<Multi_key> <z> <h>           : "ʒ"   # U+0292 LATIN SMALL LETTER EZH
+
+<Multi_key> <h> <asterisk>           : "ʰ"   # Modifier Letter Small H (U+02B0)
+<Multi_key> <j> <asterisk>           : "ʲ"   # Modifier Letter Small J (U+02B2)
+<Multi_key> <w> <asterisk>           : "ʷ"   # Modifier Letter Small W (U+02B7)
+<Multi_key> <n> <asterisk>           : "ⁿ"   # Superscript Latin Small Letter N (U+207F)
+<Multi_key> <m> <asterisk>           : "ᵐ"   # U+1D50 MODIFIER LETTER SMALL M
+<Multi_key> <g> <asterisk>           : "ᵑ"   # Modifier Letter Small Eng (U+1D51)
+<Multi_key> <L> <asterisk>           : "ᴸ"   # U+1D38 MODIFIER LETTER CAPITAL L
+<Multi_key> <M> <asterisk>           : "ᴹ"   # U+1D39 MODIFIER LETTER CAPITAL M
+<Multi_key> <E> <asterisk>           : "ᴱ"   # U+1D31 MODIFIER LETTER CAPITAL E
+<Multi_key> <asterisk> <asterisk>           : "★"   # Star
+
+# Import default rules from the system Compose file:
+ include "/usr/share/X11/locale/en_US.UTF-8/Compose"
+
+
+
+
+
+
+
+
+

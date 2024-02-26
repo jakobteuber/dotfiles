@@ -1,0 +1,7 @@
+[user]
+	email = Jakob.Teuber@cit.tum.de
+	name = Jakob Teuber
+[credential]
+	helper = libsecret
+[init]
+	defaultBranch = main

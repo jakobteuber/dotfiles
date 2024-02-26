@@ -1,0 +1,27 @@
+#!/bin/bash
+# Install all dotfiles in their respective System locations
+# usually via symlinks
+
+# Bash
+ln -sv "$(pwd)/bashrc"               ~/.bashrc
+ln -sv "$(pwd)/bash_profile"         ~/.bash_profile
+ln -sv "$(pwd)/profile"              ~/.profile
+
+# Neovim
+ln -sv "$(pwd)/nvim"                ~/.config/nvim
+
+# Vim
+ln -sv "$(pwd)/vimrc"               ~/.vimrc
+
+# Emacs (not that I would actually use it, but anyway)
+ln -sv "$(pwd)/emacs"               ~/.emacs
+
+# Git
+ln -sv "$(pwd)/gitconfig"            ~/.gitconfig
+
+# XCompose 
+ln -sv "$(pwd)/XCompose"            ~/.XCompose
+
+# GNU Debugger
+ln -sv "$(pwd)/gdbinit"             ~/.gdbinit
+
