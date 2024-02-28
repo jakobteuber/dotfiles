@@ -41,6 +41,9 @@ unset rc
 # Rust setup
 . "$HOME/.cargo/env"
 
+# OCaml environment
+eval $(opam env)
+
 # Editors
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"

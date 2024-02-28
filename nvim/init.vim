@@ -33,3 +33,9 @@ call plug#begin("~/.vim/plugged")
 call plug#end()
 
 colorscheme catppuccin " Alternatives: catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+
+
+" For Ocaml
+set rtp^="/home/jakobteuber/.opam/5.0.0/share/ocp-indent/vim"
+
+
