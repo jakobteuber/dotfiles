@@ -2,28 +2,45 @@
 # Install all dotfiles in their respective System locations
 # usually via symlinks
 
+function crate_link() {
+  local target=$1
+  local link_loc=$1
+
+  if [[ -L "$link_loc" ]]; then
+    return 0
+  elif [[ -e "$link_loc" ]]; then
+    echo "Error: $link_loc already exists." >&2
+    return 1
+  fi
+
+  ln -sv "$(pwd)/$target" "$link_loc"
+}
+
 # Bash
-ln -sv "$(pwd)/bashrc" ~/.bashrc
-ln -sv "$(pwd)/bash_profile" ~/.bash_profile
-ln -sv "$(pwd)/profile" ~/.profile
+crate_link "bashrc" ~/.bashrc
+crate_link "bash_profile" ~/.bash_profile
+crate_link "profile" ~/.profile
 
 # Neovim
-ln -sv "$(pwd)/nvim" ~/.config/nvim
+crate_link "nvim" ~/.config/nvim
 
 # Vim
-ln -sv "$(pwd)/vimrc" ~/.vimrc
+crate_link "vimrc" ~/.vimrc
 
 # Emacs (not that I would actually use it, but anyway)
-ln -sv "$(pwd)/emacs" ~/.emacs
+crate_link "emacs" ~/.emacs
 
 # Git
-ln -sv "$(pwd)/gitconfig" ~/.gitconfig
+crate_link "gitconfig" ~/.gitconfig
 
 # XCompose
-ln -sv "$(pwd)/XCompose" ~/.XCompose
+crate_link "XCompose" ~/.XCompose
 
 # GNU Debugger
-ln -sv "$(pwd)/gdbinit" ~/.gdbinit
+crate_link "gdbinit" ~/.gdbinit
 
 # SSH Config
-ln -sv "$(pwd)/ssh-config" ~/.ssh/config
+crate_link "ssh-config" ~/.ssh/config
+
+# Kitty Terminal
+crate_link "kitty" ~/.config/kitty
