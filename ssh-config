@@ -1,0 +1,50 @@
+Host *
+      IdentitiesOnly yes
+      ServerAliveInterval 15
+
+Host lxhalle
+    HostName lxhalle.in.tum.de
+    User teuj
+    IdentityFile /home/jakobteuber/.ssh/id_rsa_lxhalle
+    Ciphers +aes192-ctr
+
+Host sandkasten
+    HostName sandkasten.sec.in.tum.de
+    User team-154
+    IdentityFile /home/jakobteuber/.ssh/id_ed25519
+
+Host sciencehack
+  HostName coinbase.net.in.tum.de
+  User root
+  IdentityFile /home/jakobteuber/.ssh/vm-sciencehack
+
+Host github.com
+   User git
+   IdentityFile /home/jakobteuber/.ssh/github
+
+Host gitlab.db.in.tum.de
+   PreferredAuthentications publickey
+   IdentityFile /home/jakobteuber/.ssh/dbgitlab
+
+Host gitlab.com
+   PreferredAuthentications publickey
+   IdentityFile /home/jakobteuber/.ssh/gitlab
+
+Host avax
+  ForwardAgent yes
+  ProxyJump coinbase
+  User root
+  IdentityFile ~/.ssh/vm-sciencehack
+
+Host coinbase
+  HostName coinbase.net.in.tum.de
+  User hacker
+  Port 10022
+  IdentityFile ~/.ssh/vm-sciencehack
+
+Host vm-hackathon
+  ForwardAgent yes
+  User root
+  HostName localhost
+  ProxyJump avax
+
