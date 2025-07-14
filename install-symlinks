@@ -44,3 +44,8 @@ crate_link "ssh-config" ~/.ssh/config
 
 # Kitty Terminal
 crate_link "kitty" ~/.config/kitty
+
+# Sway
+crate_link "sway" ~/.config/sway
+crate_link "rofi" ~/.config/rofi
+crate_link "waybar" ~/.config/waybar
