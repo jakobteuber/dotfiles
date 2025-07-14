@@ -17,7 +17,6 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # Custom Prompt
-source ~/bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE="true"
 export GIT_PS1_SHOWUPSTREAM="auto"
 export GIT_PS1_SHOWCOLORHINTS="true"
