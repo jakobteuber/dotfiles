@@ -4,7 +4,7 @@
 
 function crate_link() {
   local target=$1
-  local link_loc=$1
+  local link_loc=$2
 
   if [[ -L "$link_loc" ]]; then
     return 0
