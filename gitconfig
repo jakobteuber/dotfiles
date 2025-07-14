@@ -7,3 +7,4 @@
 	defaultBranch = main
 [core]
 	editor = nvim
+	autocrlf = input
