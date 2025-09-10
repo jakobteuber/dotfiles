@@ -48,6 +48,9 @@ export LC_MESSAGES=C
 export CC="/usr/bin/clang"
 export CXX="/usr/bin/clang++"
 
+# Make GTest use color output even though it doesn’t recognize kitty
+export GTEST_COLOR="yes"
+
 # Editors
 export EDITOR="/usr/bin/nvim"
 export VISUAL="/usr/bin/nvim"
